@@ -1,4 +1,4 @@
-# Viedoc Import
+# Viedoc Import Application
 
 Command-line tool for importing data into Viedoc.
 
@@ -34,4 +34,4 @@ For issues and questions, contact Viedoc Support.
 
 ## About This Repository
 
-This repository hosts release binaries for Viedoc Import. Source code is maintained by Viedoc Technologies AB.
+This repository hosts release binaries for Viedoc Import Application. Source code is maintained by Viedoc Technologies AB.
