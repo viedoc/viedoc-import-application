@@ -1,4 +1,4 @@
-# Viedoc.Import
+# Viedoc Import
 
 Command-line tool for importing data into Viedoc.
 
@@ -24,7 +24,7 @@ Viedoc.Import.exe --help
 
 ## Documentation
 
-For detailed documentation, see [Viedoc Help Center](https://help.viedoc.com).
+For detailed documentation, see [Viedoc Data Import Application | Viedoc Learning](https://help.viedoc.net/l/cf6a45/en/).
 
 ## Support
 
@@ -34,4 +34,4 @@ For issues and questions, contact Viedoc Support.
 
 ## About This Repository
 
-This repository hosts release binaries for Viedoc.Import. Source code is maintained by Viedoc Technologies AB.
+This repository hosts release binaries for Viedoc Import. Source code is maintained by Viedoc Technologies AB.
