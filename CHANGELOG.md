@@ -1,25 +1,29 @@
 # Changelog
 
-All notable changes to Viedoc Import will be documented in this file.
+All notable changes to Viedoc.Import will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [4.88.0] - 2025-01-16
+## [Unreleased]
+
+## [4.92.0] - 2026-01-16
 
 ### Added
-
-- Support for repeating item groups with nested grouping
-- Support for tall and skinny format with item group repeat key
-
-## [4.90.0] - 2024-12-XX
+- New feature description here
 
 ### Changed
+- Updated dependency X to version Y
 
-- Updated internal dependencies
+### Fixed
+- Fixed issue with data import (#123)
 
-## [4.89.0] - 2024-11-XX
+## [4.91.0] - 2026-01-10
 
-### Changed
+### Added
+- Initial release on GitHub
+- Self-contained executable (no runtime required)
+- Code signing for Windows SmartScreen compatibility
 
-- Updated internal dependencies
-- Support for managed identity credentials in Azure environments
+### Security
+- SHA256 checksums provided for all releases
+- Software Bill of Materials (SBOM) included

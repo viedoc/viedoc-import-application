@@ -1,69 +1,37 @@
-# Viedoc Import
+# Viedoc.Import
 
-Command-line tool for importing clinical data into Viedoc Clinic from CSV files.
-
-## Overview
-
-Viedoc Import is a .NET 8 console application that transforms CSV files into ODM (Operational Data Model) XML format and imports the data into Viedoc Clinic using the Viedoc API.
-
-## Features
-
-- CSV to ODM XML transformation
-- Configurable field mapping with expression syntax
-- Support for repeating item groups with nested grouping
-- Encrypted password storage using Windows DPAPI
-- Batch import capabilities
+Command-line tool for importing data into Viedoc.
 
 ## Requirements
 
-- Windows operating system
-- .NET 8.0 Runtime
-- Valid Viedoc Clinic API credentials
+- Windows 10/11 (x86/x64)
+- No additional runtime required (self-contained)
 
 ## Installation
 
-Download the latest release from the [Releases](../../releases) page and extract to your preferred location.
+1. Download the latest release from the [Releases](https://github.com/viedoc/viedoc-import-application/releases) page
+2. Extract the zip file
+3. Optionally verify the checksum:
+   ```powershell
+   (Get-FileHash -Algorithm SHA256 .\Viedoc.Import.exe).Hash
+   ```
 
 ## Usage
 
-1. Create a configuration file specifying your import settings (API URL, credentials, field mappings)
-2. Prepare your CSV data file according to the expected format
-3. Run the application:
-
-```
-Viedoc.Import.exe
+```bash
+Viedoc.Import.exe --help
 ```
 
-The application will read the configuration, transform the CSV data, and submit it to Viedoc Clinic.
+## Documentation
 
-## Configuration
-
-The application uses an XML configuration file that specifies:
-
-- **ApiUrl** - Viedoc Clinic API endpoint
-- **ClientGuid** - Your client identifier
-- **UserName** / **Password** - API credentials (password can be encrypted)
-- **FolderName** - Location of input CSV files
-- **DefineXmlFileName** - ODM definition file
-- **FileEncoding** - Character encoding for CSV files
-- **FileDelimiter** - CSV delimiter character
-- **AllowCreatingSubjects** - Whether to create new subjects during import
-- **AllowInitiatingStudyEvents** - Whether to initiate study events during import
-
-## Expression Syntax
-
-Field mappings support expressions for dynamic value resolution:
-
-- `{SubjectKey}` - Reference the subject key
-- `{V1.VS.VSSBP}` - Reference a specific visit/form/item value
-- `{VARNAME:format}` - Apply formatting to a value
+For detailed documentation, see [Viedoc Help Center](https://help.viedoc.com).
 
 ## Support
 
-For support and documentation, please contact Viedoc Technologies.
+For issues and questions, contact Viedoc Support.
 
-## License
+---
 
-Copyright Viedoc Technologies AB. All rights reserved.
+## About This Repository
 
-See [LICENSE](LICENSE) for details.
+This repository hosts release binaries for Viedoc.Import. Source code is maintained by Viedoc Technologies AB.
